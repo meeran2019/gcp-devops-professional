@@ -18,5 +18,7 @@ Container registry:
       asia.gcr.io - Stores in asia data center.
       eu.gcr.io - Stores in EU data center.
       us.gcr.io - Stores in Unites states data center.
+    $DEVSHELL_PROJECT_ID  - Environment variable to get current project id. 
+    Internally creates bucket to store registry.
       
      
