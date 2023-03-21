@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------------------------------
+INTRODUCTION:
+-------------------------------------------------------------------------------------------------------
+Basics of docker:
+    Dockerfile
+    docker build
+    docker pull
+    dockr push 
+
+It consists of Container registry and Artifact registry. 
+
+Container registry:
+    It is of host-name/project-id/image-name:tag 
+    Host name is not specific to region.
+    No IAM role is tagged.
+    Host name is,
+      gcr.io - Stores in United states data center.
+      asia.gcr.io - Stores in asia data center.
+      eu.gcr.io - Stores in EU data center.
+      us.gcr.io - Stores in Unites states data center.
+      
+     
