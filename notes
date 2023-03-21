@@ -7,6 +7,9 @@ Basics of docker:
     docker pull
     dockr push 
 
+-------------------------------------------------------------------------------------------------------
+REGISTRY:
+-------------------------------------------------------------------------------------------------------
 It consists of Container registry and Artifact registry. 
 
 Container registry:
@@ -21,4 +24,23 @@ Container registry:
     $DEVSHELL_PROJECT_ID  - Environment variable to get current project id. 
     Internally creates bucket to store registry.
       
+Artifact registry:
+    It is advance to container registry.
+    It supports roles. (reader, Writer, Administrator & repo administrator created by default)
+    It isused to store images, artifacts like jfrog artifactory.
+    Multiple repositories can create per project.
+    Can create regional or multi regional level repositories.
+    URL is us-central1-docker.pkg.dev/$PROJECT_ID/repo/image:tag
+            us-central-1 can change depends upon region selected.    
+    Configuration: 
+        gcloud auth configure-docker us-central1-docker.pkg.dev  -> To configure docker to use google cloud cli to authenticate request to artifact registry in us-central.
+
+-------------------------------------------------------------------------------------------------------
+DEPLOY APPLICATIONS:
+-------------------------------------------------------------------------------------------------------
+
+        
+                
+    
+    
      
