@@ -50,7 +50,10 @@ Deployment Method:
     Blue/green
     Canary
     Rolling 
-    Traffic Splitting: Send traffic to small percentage of users first (5% to v2 and 95% to v1 stable)
+    Traffic Splitting: Send traffic to small percentage of users first (5% to v2 and 95% to v1 stable). It is used for A/B testing.
+
+Google Cloud Function:
+    
     
     
     
