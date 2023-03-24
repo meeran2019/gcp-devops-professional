@@ -53,6 +53,14 @@ Deployment Method:
     Traffic Splitting: Send traffic to small percentage of users first (5% to v2 and 95% to v1 stable). It is used for A/B testing.
 
 Google Cloud Function:
+    It is event based trigger. 
+        Events can be http, pub/sub, storage, firestore.
+    Only one version active at any time, so it cannot roll back to previous version if any failure.
+    To overcome this, require to create new functions and loadbalance it.
+    
+    
+    
+        
     
     
     
