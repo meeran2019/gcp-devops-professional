@@ -61,7 +61,8 @@ Google Cloud Function:
 Google App Engine:
     It is used to deploy web application.
     It is earliest product.
-    Only one app engine can be deployed for each project.
+    Only one app engine can be deployed for one project.
+    
     
     
         
