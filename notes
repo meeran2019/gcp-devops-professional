@@ -126,22 +126,15 @@ Instance Group:
                 Can select diff vm machine family type. 
                 
 Load balancer:
-
     
+    create a load balancer type (http, tcp, udp)
+    In backend service, select the instance group.
+
 
 -------------------------------------------------------------------------------------------------------
 PIPELINES:
 -------------------------------------------------------------------------------------------------------
 
-
-    
-
-    
-
-
-
-
-    
     
     
         
