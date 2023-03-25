@@ -40,6 +40,7 @@ DEPLOY APPLICATIONS:
 -------------------------------------------------------------------------------------------------------
 
 Compute Options:
+
     Compute Engine: Like ec2.
     Kubernetes: like eks. Used to deploy containarized application. 
     App Engine: Serverless web application deployment.
@@ -47,21 +48,48 @@ Compute Options:
     Cloud Function: Event triggered based function. 
     
 Deployment Method:
+
     Blue/green
     Canary
     Rolling 
     Traffic Splitting: Send traffic to small percentage of users first (5% to v2 and 95% to v1 stable). It is used for A/B testing.
 
 Google Cloud Function:
+
     It is event based trigger. 
         Events can be http, pub/sub, storage, firestore.
     Only one version active at any time, so it cannot roll back to previous version if any failure.
     To overcome this, require to create new functions and loadbalance it.
     
 Google App Engine:
+
     It is used to deploy web application.
-    It is earliest product.
+    It is earliest product and serverless. 
     Only one app engine can be deployed for one project.
+    Environmant consists of,
+        Standard
+        Flexible    -   CUsom runtime.
+    To deploy application, it requires,
+        requirements.txt (for python)
+        main.py (for python)
+        app.yaml 
+    Commands: 
+        gcloud app deploy       -> deploy application and promote version.
+        gcloud app deploy --no-promote --version name     -> deploy application code but not implement. 
+    In Version, can Migrate Traffic (100%) and Split Traffic (partial)
+
+Cloud Run:
+
+    It introduced recently.
+    Serverless 
+    Its better version of app engine.
+    Deploy containarized application.
+    It is like ECS (to create a service)
+    It is like AWS Batch (to create a job)
+    Can "Edit and Deploy New revision" -> Manage revison to split traffic.
+    
+
+
     
     
     
