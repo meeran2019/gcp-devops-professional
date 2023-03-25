@@ -135,17 +135,15 @@ Load balancer:
 PIPELINES:
 -------------------------------------------------------------------------------------------------------
 
-    
-    
-        
-    
-    
-    
-    
-    
-    
-        
-                
-    
-    
-     
+Source Code Management:
+    Cloud Source Repository.
+
+Build:
+    Cloud Build 
+
+Artifact Storage: 
+    Artifact Registry 
+
+Deploy:
+    Cloud Deploy 
+
