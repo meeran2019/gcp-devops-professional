@@ -106,6 +106,28 @@ Compute Engine:
         non containarized app.
     Can install startup script (user data in aws)
 
+Instance Template:
+
+    It is like launch template/launch configuration in AWS.
+    Create instance from template.
+    
+Instance Group:
+
+    This is Auto Sacling Group (ASG) in AWS. 
+    Used to manage group of instances.
+    It consists of,
+        New managed instance group (stateless):
+                Give min and max no of instances.
+                All machine family type is same. 
+        New managed instance group (stateful):
+                Give NO min and max no of instances but can select no of instances. 
+        New unmanaged instance group:
+                Manually manage group of load balancing VMs.
+                Can select diff vm machine family type. 
+                
+Load balancer:
+
+    
 
 -------------------------------------------------------------------------------------------------------
 PIPELINES:
