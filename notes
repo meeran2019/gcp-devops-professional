@@ -139,11 +139,41 @@ Source Code Management:
     Cloud Source Repository.
 
 Build:
-    Cloud Build 
+    Cloud Build: 
+        Trigger based on event.
+        Source code repository and branch. 
+        Configuration Type: 
+            Support yaml/json
+            dockerfile 
+            buildpacks 
+        Incase of dockerfile, choose the registry name. 
+        Can run manual to trigger.
 
 Artifact Storage: 
     Artifact Registry 
 
 Deploy:
     Cloud Deploy 
+
+-------------------------------------------------------------------------------------------------------
+
+Pipeline 1 (Create docker image and push to registry):
+
+    Step1: Setup a source repository
+        Cloud Source Repository -> Select project ID  & Repo name.
+        Once repo is created, it can clone repo and push the code to repo.
+
+    Step2: Setup a cloud build 
+        Select type as dockerfile and source as repository.
+        Once build completed, image placed in container registry.
+
+-------------------------------------------------------------------------------------------------------        
+
+Pipeline 2 ():
+
+    
+
+
+
+
 
