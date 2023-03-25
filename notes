@@ -87,7 +87,36 @@ Cloud Run:
     It is like ECS (to create a service)
     It is like AWS Batch (to create a job)
     Can "Edit and Deploy New revision" -> Manage revison to split traffic.
+
+GKE (Google Kubernets Engine):
+
+    It consists of,
+        Create cluster:
+            Node pools - create no of nodes.
+        Workload deployment:
+            create pods and deployments. 
+        Expose application:
+            Create a services type and expose the applications.
     
+Compute Engine:
+
+    General purpose computing machine.
+    2 ways of deployment,
+        containarized app
+        non containarized app.
+    Can install startup script (user data in aws)
+
+
+-------------------------------------------------------------------------------------------------------
+PIPELINES:
+-------------------------------------------------------------------------------------------------------
+
+
+    
+
+    
+
+
 
 
     
