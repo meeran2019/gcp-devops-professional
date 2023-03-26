@@ -143,11 +143,12 @@ Build:
         Trigger based on event.
         Source code repository and branch. 
         Configuration Type: 
-            Support yaml/json
+            Support yaml/json (cloudbuild.yaml)
             dockerfile 
             buildpacks 
         Incase of dockerfile, choose the registry name. 
         Can run manual to trigger.
+        https://cloud.google.com/build/docs/build-config-file-schema
 
 Artifact Storage: 
     Artifact Registry 
@@ -169,9 +170,33 @@ Pipeline 1 (Create docker image and push to registry):
 
 -------------------------------------------------------------------------------------------------------        
 
-Pipeline 2 ():
+Pipeline 2 (Deploy python app to App Engine):
 
+    Step1: Setup a source repository. 
     
+    Step2:  Create a cloudbuild.yaml file and app.yaml for app engine.
+
+        cloudbuild.yaml 
+        steps:
+        - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+        entrypoint: 'bash'
+        args: ['-c','gcloud config set app/cloud_build_timeout 1600 && gcloud app deploy']
+        options:
+        logging: CLOUD_LOGGING_ONLY
+        timeout: 1600s
+
+        app.yaml 
+        runtime: python311 # or another supported version
+
+-------------------------------------------------------------------------------------------------------                
+
+Pipeline 3 (Deploy to Google Cloud Function):
+
+    Step1: Setup a source repository. 
+
+    Step2: 
+
+
 
 
 
