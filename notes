@@ -194,11 +194,86 @@ Pipeline 3 (Deploy to Google Cloud Function):
 
     Step1: Setup a source repository. 
 
-    Step2: 
+    Step2:  It requires, 
+                cloudbuild.yaml 
+                function-source.zip 
 
+    cloudbuild.yaml
+    steps:
+    -   name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+        args:
+        - gcloud
+        - functions
+        - deploy
+        - home
+        - --region=us-central1
+        - --source=.
+        - --trigger-http
+        - --runtime=python37
+        - --allow-unauthenticated
+    options:
+    logging: CLOUD_LOGGING_ONLY
+            
+-------------------------------------------------------------------------------------------------------                
 
+Pipeline 4 (Deploy to google run):
 
+    Step1: create a source repo. 
 
+    Step 2: It requires, 
+        Dockerfile
+        Source code 
+        cloudbuild.yaml 
+
+        cloudbuild.yaml
+        steps:
+        # build image
+        - name: 'gcr.io/cloud-builders/docker'
+          args: ['build','-t','gcr.io/gcp-devops-learn-381106/runimage','.']
+        #push image to registry
+        - name: 'gcr.io/cloud-builders/docker'
+          args: ['push','gcr.io/gcp-devops-learn-381106/runimage']
+        #deploy to cloudrun
+        - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+          entrypoint: gcloud
+          args: ['run','deploy','myfirstrun','--image','gcp-devops-learn-381106/runimage','--region','us-central1','allow-unauthenticated']
+        images:
+        - gcr.io/gcp-devops-learn-381106/runimage
+        
+-------------------------------------------------------------------------------------------------------                
+
+Pipeline 5 (Deploy to GKE):
+
+    Step 1:
+        Create GKE cluster and some sample images and do workload (deployment)
+        Create load balancer service. 
+
+    Step2:
+        Create source code repo 
+    
+    Step3: 
+        cloudbuild.yaml 
+        steps:
+        - name: 'gcr.io/cloud-builders/git'
+          args: ['clone','repo-path']
+        - name: 'gcr.io/cloud-builders/docker'
+          args: ['build']
+        - name: 'gcr.io/cloud-builders/docker'
+          args: ['push']
+        substitutions:
+          PROJECT_ID: 
+          CINAME: 
+          VERSIOn: 
+        #Below only updates, image name to existing deployment. 
+        - name: 'gcr.io/cloud-builders/kubectl'
+          args: [kubectl set image deploy deploy-name image-name]
+          env: 
+          - 'CLOUDSDK_COMPUTE_ZONE=useast-1a'
+          - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-name'
+        
+-------------------------------------------------------------------------------------------------------                
+    
+    
 
 
 
