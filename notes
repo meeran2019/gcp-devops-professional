@@ -278,6 +278,8 @@ JENKINS:
 
 To integrate with Jenkins:
 
+From "Deployment Manager", can search in market place and install tools like jenkins, wordpress etc. 
+
     1. Can search Jenkins and select "Google click to deploy" from Marketplace. 
     2. It creates VM using Jenkins Image.
     3. In underlying uses Compute engine, Cloud deployment manager and Cloud runtime.
@@ -285,6 +287,6 @@ To integrate with Jenkins:
     5. Once deployed, it will give URL and credentials to login. 
     
 -------------------------------------------------------------------------------------------------------
-JENKINS:
+INFRASTRUCTURE DEPLOYMENT:
 -------------------------------------------------------------------------------------------------------
 
