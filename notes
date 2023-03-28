@@ -287,6 +287,40 @@ From "Deployment Manager", can search in market place and install tools like jen
     5. Once deployed, it will give URL and credentials to login. 
     
 -------------------------------------------------------------------------------------------------------
-INFRASTRUCTURE DEPLOYMENT:
+SECURE PIPELINE:
 -------------------------------------------------------------------------------------------------------
+
+Secure Container Deployment: 
+
+    1. can use Google base image: 
+            Google base image can found in market place. 
+            Google uses this base image for their own application deployment. 
+    2. Container Analysis.
+    3. Binary Authorization.
+    
+Container Scanning API:
+    
+    Works same in both artifact registry and container registry. 
+    Automated vulnarability scanning:
+        whenever image is uploaded, it does auto scanning. 
+    Manual vulnarability scanning: 
+        gcloud artifacts docker images scan imageurl --remote 
+        
+    Container Registry -> Settings -> Vulnarability scanning -> Turn ON : Existing images will not be scanned but only new images uploaded.
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
 
