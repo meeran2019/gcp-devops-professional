@@ -309,8 +309,17 @@ Container Scanning API:
     Container Registry -> Settings -> Vulnarability scanning -> Turn ON : Existing images will not be scanned but only new images uploaded.
     
     
+Binary Authorization: 
+
+    How to prevent deployment if any vulnarabilities. 
+    It is deploy time security control. 
+    It applies on GKE & CLoud Run.
     
-    
+    Configure Binary Authorization on Cloud Run:
+        
+            
+            
+        
     
 
 
