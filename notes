@@ -371,11 +371,27 @@ Group:
     
     
 -------------------------------------------------------------------------------------------------------
-CLOUD MONITORING SERVICE:
+OPS/DEV TOOLS:
 -------------------------------------------------------------------------------------------------------    
     
-            
-            
+Cloud Error reporting:
+    It helps to detect error in application.
+    Operations -> Error Reporting.
+    Can send to notification/.
+    It captures error ex: divide by zero, index outof range etc. 
+
+Cloud Debugger:
+    It helps to debug the code if any error.  
+    It requires to handle in code to add required libraries.
+    Operations -> Debugger -> Add source code.
+    Can "take snapshot" on particular line of code. 
+    
+Cloud Trace:
+    It helps to find the latency.
+
+Cloud Profiler:
+    It helps to find how much reosurce is consumed. 
+    
             
             
         
