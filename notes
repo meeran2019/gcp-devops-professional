@@ -314,8 +314,32 @@ Binary Authorization:
     How to prevent deployment if any vulnarabilities. 
     It is deploy time security control. 
     It applies on GKE & CLoud Run.
-    
+    It is policy to maintain. 
+    Security -> Binary authorization -> Enable (first time)
+    Default Rule: 
+        Allow all images
+        Disallow all images
+        Require attestations - allow only verified by attestors.
+            1. Create attestator.
+                    require public key (create using kms)
+            2. Authorize the image using gcloud command. 
+        
     Configure Binary Authorization on Cloud Run:
+
+            While create cloud run, under security require to enable "binary auth".
+
+    Configure Binary Authorization on GKE:
+
+            Cluster -> Security -> Enable Binary Authorization.
+
+    
+-------------------------------------------------------------------------------------------------------
+CLOUD MONITORING SERVICE:
+-------------------------------------------------------------------------------------------------------
+
+CloudOps Tools:
+
+    
         
             
             
