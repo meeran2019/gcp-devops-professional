@@ -339,7 +339,22 @@ CLOUD MONITORING SERVICE:
 
 CloudOps Tools:
 
+    Logging and Monitoring of applications.
+
+    Monitoring -> Dashboards -> Can create custom dashboard or use google dashboard. 
+
+    Ops agent is require to capture additional information like memory. 
+
+Installing Ops Agent in VM: 
+
+    https://cloud.google.com/stackdriver/docs/solutions/agents/ops-agent/installation
+
+
+Create a custom dashboard: 
+
     
+
+
         
             
             
