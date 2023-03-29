@@ -349,8 +349,42 @@ Installing Ops Agent in VM:
 
     https://cloud.google.com/stackdriver/docs/solutions/agents/ops-agent/installation
 
+Create a custom dashboard:
 
-Create a custom dashboard: 
+    Monitoring -> Dashboard -> Create dashboard. 
+    For each chart, have one metrics tagged. 
+    Can place multiple charts. 
+    
+Setup Uptime Check:
+    
+    Used to check whether system application is up and running.
+    It consists of,
+        target 
+        health check
+        Notification
+     
+     Alert Policy:
+            Create a alert condition based on metrics and threshold and then send notification. 
+            
+Group: 
+    It helps to group resources and apply monitoring.
+    
+    
+-------------------------------------------------------------------------------------------------------
+CLOUD MONITORING SERVICE:
+-------------------------------------------------------------------------------------------------------    
+    
+            
+            
+            
+            
+        
+        
+    
+    
+    
+
+
 
     
 
