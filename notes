@@ -557,40 +557,16 @@ Log Based Metrics Counter:
      3. Monitoring -> Monitoring Explorer -> To check metrics logs.
      
          
+Cloud Log Router: 
+    It is used to send the log to cloud storage bucket, cloud logging bucket, pub/sub, big query, splunk etc.
+    Logging -> Log router -> Create Sink
+        Sink Name, Sink destination (bucket etc), filter query
         
-
-
-
-     
+    Logs -> Logging API -> _default (30 days and configurable) , _required (400days retention and unconfigurable), _user defined (30 days retention and configurable) -> pub/sub, big query, splunk etc
     
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-    
-
-
+    Logs Storage: 
+        It is cloud logging bucket. 
+        It consists of  _default (30 days and configurable) , _required (400days retention and unconfigurable).
+        Can create user defined bucket.
         
-            
-            
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
+-------------------------------------------------------------------------------------------------------                    
