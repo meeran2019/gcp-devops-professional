@@ -385,14 +385,67 @@ Cloud Debugger:
     It requires to handle in code to add required libraries.
     Operations -> Debugger -> Add source code.
     Can "take snapshot" on particular line of code. 
+    Can "log point history" on particular line of code. 
     
 Cloud Trace:
-    It helps to find the latency.
-
-Cloud Profiler:
-    It helps to find how much reosurce is consumed. 
+    It helps to find the latency for the google services. 
     
-            
+Cloud Profiler:
+    It helps to find how much reosurce is consumed.
+
+-------------------------------------------------------------------------------------------------------
+OPTIMIZE SERVICE PERFORMANCE:
+-------------------------------------------------------------------------------------------------------    
+    
+Cloud Billing:
+
+    Projects should associated with billing account.
+    By default, create billing account and projects are associated. 
+    New billing accounts can be created and existing projects can be modified.
+
+    Billing -> Billing Account -> Manage Billing Accounts. 
+
+    Billing -> Cost management -> report 
+
+
+Pre-emptiable Virtual Machine (Spot): 
+
+    Short lived cheaper VM 
+    Can provision preempible VM when, 
+        Workload is fault tolerant. 
+        Not require 100% available. 
+        Cost is less. 
+        Upto 80% discount. 
+        Max life is 24 hrs. 
+        Gives 30s warning before shutdown. 
+    Regular VM has higher priority than regular VMs.
+
+    Compute Machine -> Management -> Availability Policy -> Spot 
+
+
+Compute Engine - Flat rate, Committed use, Sustained use discount: 
+
+    Flat rate - Pay for what you use. 
+
+    Committed use discount (CUD): 
+        If workload is predictable. 
+        Can commit for 1 or 3 years.
+        Only on VM & GKE. 
+        Cannot cancel commitments. 
+        It consists of hardware and software license commitment. 
+    
+    Sustained use discount - automated discounts means more use get more discount for a month. Applies to N1 & N2 machine type. Only on VM & GKE. 
+
+
+Total Cost of Operations (TCO):
+
+    TCO = Cost of purchase + cost of operations. 
+
+
+-------------------------------------------------------------------------------------------------------
+INFRASTRUCTURE DEPLOYMENT:
+-------------------------------------------------------------------------------------------------------    
+
             
         
         
