@@ -446,7 +446,33 @@ Total Cost of Operations (TCO):
 INFRASTRUCTURE DEPLOYMENT:
 -------------------------------------------------------------------------------------------------------    
 
-            
+Infrastructure as Code (IaC):
+
+    Create infra using code. 
+
+Terraform:
+
+    Cloud neutral tools which can use to create infra for any vendors like aws, gcp etc .
+    In gcloud, terraform is already installed. 
+
+Authentication: 
+
+    https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/getting_started
+
+    Using Json keys:
+        1. From service account, create the json keys.
+        2. Upload the json keys in gcloud 
+        3. In provider block, use the credentials property. 
+
+                provider "google" {
+                # Configuration options
+                project = "gcp-devops-learn-381106"
+                region  = "us-central1"
+                zone    = "us-central1-a"
+                credentials = "keys.json"
+                }
+
+
         
         
     
