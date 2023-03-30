@@ -529,8 +529,38 @@ Log collection - Other google cloud services:
     No need of enable and capture it.
     In log explorere, filter based on service. 
     
+Log collection - Install cloud logging agent: 
+    Legacy agent (old)
+    Opsagent (latest) 
+    Require agent to install in VM to capture additional information like memory etc. 
+    Internally uses fluentd to collect and send logs.
     
-    
+Log collection - Cloud Logging API:
+    Python/Java SDK:
+        https://github.com/googleapis/python-logging
+        
+    From Onpremise: 
+        Step1: Requires json key from service account. 
+        Step2: SET GOOGLE_APPLICATION_CREDENTIALS=key.json  (for authentication) 
+        Step3: Install logging using,
+                https://pypi.org/project/google-cloud-logging/
+             
+Log Based Metrics Counter: 
+
+    Logging -> log based metrics -> Create Metric 
+    Types,
+        Counter: Count no of log entries
+        Distribution: Collects numeric data from log entries. Add the field and value.
+        
+     1. Get the filter query.
+     2. Create as Counter or Distribution
+     3. Monitoring -> Monitoring Explorer -> To check metrics logs.
+     
+         
+        
+
+
+
      
     
     
