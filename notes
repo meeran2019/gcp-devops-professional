@@ -477,7 +477,55 @@ Authentication:
 CLOUD LOGGING: 
 -------------------------------------------------------------------------------------------------------    
         
+Log Explorer: 
+    It allows to search logs based on resource types and other filters. 
+    Can write own query to filter. 
+    Can download logs and export to other service.
+    
+Types of Cloud Auditing Log:
+    Who did what, when, where
+    
+    Admin activity: 
+        By default enabled. 
+        Capture administrative activities. 
+        Retains for 400 days.
+        Free of cost. 
+        Create/delete VM etc. 
         
+    Data Access:
+        Not enabled by default 
+        Create/Modify resource data
+        Data retention for 30 days
+        Free of cost.
+        Creaet object in storage etc. 
+    
+    System Event:  
+        Enabled by default. 
+        It is because of google system action.
+        Free of costs
+        Retains for 400 days.
+        Preemptive VM shutdown logs etc. 
+        
+    Policy Denied:
+        If any policy not enabled then throw error.
+        
+Admin Activity Logs:
+    Log Explorer -> Log name -> Admin logs 
+
+System Logs:
+    Log Explorer -> Log name -> System logs 
+
+Data Access Logs:
+    To enable logs: IAM & Admin -> Audit Logs -> Services (Admin Read, Data read, Data write) -> Enable
+    Log Explorer -> Log name -> data_access logs 
+    
+Log Collection GCloud SDK:
+    
+    
+    
+    
+    
+    
     
     
     
