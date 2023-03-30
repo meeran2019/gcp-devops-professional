@@ -521,6 +521,18 @@ Data Access Logs:
     
 Log Collection GCloud SDK:
     
+    gcloud logging write log-name message 
+    gcloud logging write log-name {key=value} --payload-type=json --severity=CRTITICAL    
+    gcloud logging read log-name (Filter can based on time, resource, crtiticality etc) 
+    
+Log collection - Other google cloud services: 
+    No need of enable and capture it.
+    In log explorere, filter based on service. 
+    
+    
+    
+     
+    
     
     
     
