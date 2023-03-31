@@ -1,1 +1,21 @@
+Legacy Agent: 
+  It is monitoring agent. 
+  Uses collectd service.
+  
+Uptime Check:
+  It can be public and private uptime. 
+  It support HTTP/HTTPS/TCP.
+  Target can be, 
+      Compute Engine
+      Load balancer
+      App Engine
+      Cloud Run
+      Kubernetes Load balancer 
 
+Cloud Trace:  
+   It is like app dynamics.
+   Used to show the req/res time and latency of different components in microservices. 
+   
+   
+      
+  
