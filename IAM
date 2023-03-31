@@ -30,6 +30,9 @@ Types of Roles:
 
                 Default service accounts
                 User Managed 
+                Google managed service account (system)
+
+                
 
 
         Viewer  : Write 
