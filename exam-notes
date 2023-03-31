@@ -16,6 +16,27 @@ Cloud Trace:
    It is like app dynamics.
    Used to show the req/res time and latency of different components in microservices. 
    
+Billing data recommendation:
+  Google recommends billing data as,
+    1. Create billing data for separate project. 
+    2. Createa bigquery dataset for visualization.
+    
+Labelling and Grouping resources:
+    Network tags - used to manage network traffic to/from VM.
+    Labels - Billing breakdown.
+    Security marks - for compliance requirement. 
+    
+Virutal Machine Networking: 
+  Network Service tier:
+      Premium - Traffic flows to google network and costly. 
+      Standard - Traffic uses only entry and exit google point.
+
+Cloud Debugger: 
+  Used to find the state of app in real time.
+  
+  
+      
+
    
       
   
