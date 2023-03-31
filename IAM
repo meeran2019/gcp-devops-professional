@@ -1,0 +1,63 @@
+
+Introduction:
+
+    Idendity and Access Management.
+    AUthentication.
+    Authorization.
+    Idendities can be, 
+        User 
+        Group 
+        Application running in GCP 
+        APplication running in Onprem to access GCP.
+    Provides granular access. 
+
+    Member is some identity (who).
+    Roles are contain only permission (different from AWS role).
+    Policy (Bind) is attach role to member. 
+
+Types of Roles:
+
+    Basic or Primitive Roles: 
+        Owner   : Reader + Editor + Manages roles + Billing
+        
+        Editor  : Read + Write Service Accounts:
+
+            Application to need to access other resources. 
+            Denote by gserviceaccount.com domain. 
+            Does not have password but use Key pairs. 
+
+            Types: 
+
+                Default service accounts
+                User Managed 
+
+
+        Viewer  : Write 
+
+    Predefined Roles: 
+        Fine grained roles and managed by google. 
+        Storage Admin, Storage Object Admin, Storage Object Viewer.
+
+    Custom Roles:
+        User created custom roles. 
+
+
+Types of Members or Principal:
+
+    User
+    Serviceaccount 
+    group
+    domain 
+
+
+Service Accounts:
+
+    Application to need to access other resources. 
+    Denote by gserviceaccount.com domain. 
+    Does not have password but use Key pairs. 
+
+    Types: 
+
+        Default service accounts
+        User Managed 
+
