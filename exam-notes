@@ -34,7 +34,54 @@ Virutal Machine Networking:
 Cloud Debugger: 
   Used to find the state of app in real time.
   
+Logs to SPlunk:
+  Create a destination sink as Splunk and select the pub/sub topic. 
+
+Choose SLI based on SLO:
+  Discover what users expect from the system and choose SLIs to measure it.
+
+Store Organizational Log:
+  Creata a project and create a logging bucket. 
+  Create a log sink from CLI and use --include-children flag (includes all projects in organization).
+
+Factors to consider for data access Log:  
+  It will increase log ingestion. 
+  Possibility of exceeding log allotment limits. 
+  Changing default retention incurs storage cost. 
+
+Blue/Green deployment:
+  Spinnaker and Jenkins is used for blue/green deployment. 
+  Deployment manager is used for automate deployment of infrastructure. 
+
+Jenkins - Google recommended deployment:
+  Google is recommending to deploy Jenkis in Compute Engine and GKE.
+
+Google recommendation for capacity planning:
+  Design for graceful degradation.
+  Carry out load testing.
+  Implement monitoring and alerting.
+
+Prevent Server Overload:
+  Queue Management.
+  Load shedding and graceful degradation.
+  Retries 
+  Better to avoid cross layer communication.
+
+To detect vulnarabilities in images:
+  Enable vulnarability scanning in container registry and artifact registry. 
+
+VPC Flow logs:
+  It captures network flows to/from VM instances and GKE.
+  Can use filters in logs. 
+  Can enable logs for each subnet level. 
+  To capture log flow between pods which require "intranode visibility".
+  Can modify logs using record_transformer plugin. 
+
   
+
+
+
+
       
 
    
