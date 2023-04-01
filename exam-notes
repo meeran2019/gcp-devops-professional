@@ -76,8 +76,49 @@ VPC Flow logs:
   Can enable logs for each subnet level. 
   To capture log flow between pods which require "intranode visibility".
   Can modify logs using record_transformer plugin. 
+  Firewall rules are not reason for no logging. 
 
-  
+Archive storage is most cost effective storage for data to be accessed once a year. 
+
+Image management best practices:
+  1. At image creation project, assign "compute.imageuser" role for "Image User group".
+  2. At image creation project, assign "compute.instanceadmin" role fir "Image creation user"
+
+Secret Manager: 
+  Auto password rotation can enable only using API or CLI and cannot be done through console. 
+
+Lowering the SLO is not recommended action when error budget is exhausted. 
+Lowering SLO means lowering reliability of system.
+
+Once incident is raised, then next assess the impact of incident. 
+
+Custom FLuentd:
+  In GKE, logging can be disabled and can use custom fluentd to filter sensitive data. 
+
+Source code repository is connected with external vendor like github and bitbucket. 
+
+Increase speed of coud build in docker:
+  exclude files not needed using .gloudignore file.
+  Select virtual machine with higher cpu. 
+  Building leaner containers.
+  Using kaniko cache. 
+  using cached docker image. 
+  Caching directories with cloud storage. 
+  Avoid upload of unnecessary files using .gloudignore. 
+
+GKE API enabled by default by Cloud Build before trigger. 
+
+Metric Kind:
+  Gauage Metric - value measures in specific instance in time. - used for memory utilization. 
+  Delta metric - value measures the changes since last recorded.
+  Cumulative metric - value constantly increase overtime. 
+
+Cloud Run is natively integrated with Error Reporting. So no additional setup is required to capture. 
+
+
+
+
+
 
 
 
