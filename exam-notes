@@ -141,4 +141,43 @@ GKE Monitoring:
     GKE -> CLusters -> Features -> Enable Logging (System/Workloads/APIServer/Scheduler/Controller) -> Enable CLoud Monitoring (System/APIServer/Controller/Scheduler)
     Monitoring and logging agent is already installed in GKE and no need of require to install and just require to enable it. 
 
+Monitoring:
+    Monitoring Editor - In console, Grand permission to add/remove projects to scope. 
+
+Exclusion filter works after logging API has called and logs are in cloud logging. 
+
+To capture logs in centralized project: It require to create logging bucket in centralized projeact and From other project create sink with destination as centralized logging project. 
+
+To capture OS level logs: Install google-fluentd-catch-all package on instances. 
+
+Cloud Build Schedule: 
+    1. Trigger should be  MANUAL.
+    2. Click "RUN ON SCHEDULE" operations.
+    3. Enable CLoud Scheduler API. 
+    4. Once deleted cloud build, delete cloud scheduler also. 
+
+Source Repository: 
+  At repo level, can assign permission to them. 
+
+Container Registry: 
+  At registry level to give permission. 
+
+Cloud Profiler:
+  It is a statistical low overhead profiler that continuosly gathers CPU usage and Memory allocation information from production applications. 
+  Types of profile available,
+    CPU Time, Memory, Heap, Contention, Threads, Wall time.
+
+  Incase "Planning Lead" is not assumed, Incident Commander will assume the role. 
+
+  Error budget should be used to control the frequency of new release to production. 
+
+  Log Sink Destination:
+      Cloud storage Solution - Takes hour 
+      Pub/Sub - Takes seconds and useful for real time.
+      Bigquery - Takes minutes. 
+
+      
+
+
+
 
