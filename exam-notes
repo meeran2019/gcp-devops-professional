@@ -176,7 +176,41 @@ Cloud Profiler:
       Pub/Sub - Takes seconds and useful for real time.
       Bigquery - Takes minutes. 
 
-      
+catch-all is configuration of logging agent. 
+
+Standalone JVM Monitoring Plugin: 
+    Cloud monitoring can monitor JVM process for common java metrics in linux only. 
+
+In cloud build config, image field is used to declare image for both container registry and artifact registry.
+
+Types of Logs:  
+  Admin user
+  Data access 
+  System logs
+  Access transparency: It provides you with logs of action taken by google staff. 
+
+  End of workday - Handover command to incident commander in another location. 
+
+  Cloud Profiler in App Engine: 
+    Cloud profiler is used to continuosly gather CPU and memory usage from application.
+    It involces, 
+      Cloud profiler API needs to be enabled. 
+      Add to requirements.txt file so it can be downloaded (add google-cloud-profiler to requirements.txt). 
+      It need to imported and started. (import googlecloudprofiler module and call googlecloudprofiler.start function)
+      NOTE: In APP Engine, user cannot access underlying instance so cannot install package manually. 
+
+Cloud Build, Artifact field is used to specify non container artifact storage location. 
+
+pub/sub and cloud logging are global services. 
+
+
+
+
+
+
+
+
+
 
 
 
