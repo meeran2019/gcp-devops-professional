@@ -116,15 +116,26 @@ Metric Kind:
 Cloud Run is natively integrated with Error Reporting. So no additional setup is required to capture. 
 
 
+Monitoring -> Alerting -> Notification Channel:
+    Pagerduty, Slack, Webhook, Email, SMS, Pub/Sub 
 
+Load balancer Health Checks:
+    It is based on category (health check or legacy health check), protocol (used to probe backend), port specification
 
+Cloud Build Trigger Types:
+    Github trigger, Bitbucket trigger, Manual trigger, pub/sub triggers, webhook url, Manual schedule, 
 
+Cloud build Event:
+    Push to branch, push new tag, pull request (not for source repo)
 
+Cloud Build Approval:
+    Option "Require approval before build executes".
 
+Incident Team:
+    Incident Command - holds high level state about incident. assign responsibilities according to needs. Holds all positions that are not delecated. Remove roadblocks.
+    Operation work - Only group modifying the system during work.
+    Communication - Public face. Issuing periodic updates to stakeholders. Keeping incident document uptodate and accurate. 
+    PLanning - Supoprts ops team by arranging handoff, dinner, filing bugs, ordering dinner.
 
-
-      
-
-   
-      
-  
+GKE Monitoring:
+        
