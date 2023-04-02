@@ -138,4 +138,7 @@ Incident Team:
     PLanning - Supoprts ops team by arranging handoff, dinner, filing bugs, ordering dinner.
 
 GKE Monitoring:
-        
+    GKE -> CLusters -> Features -> Enable Logging (System/Workloads/APIServer/Scheduler/Controller) -> Enable CLoud Monitoring (System/APIServer/Controller/Scheduler)
+    Monitoring and logging agent is already installed in GKE and no need of require to install and just require to enable it. 
+
+
