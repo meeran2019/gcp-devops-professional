@@ -203,6 +203,11 @@ Cloud Build, Artifact field is used to specify non container artifact storage lo
 
 pub/sub and cloud logging are global services. 
 
+Error budget is expressed as percentage of SLO which is not close to 100%.
+  SLO - 99.95% and Error budget is 0.05%
+
+_Default logs doesnot contain adminin activity logs. 
+
 
 
 
