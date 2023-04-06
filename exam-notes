@@ -208,6 +208,12 @@ Error budget is expressed as percentage of SLO which is not close to 100%.
 
 _Default logs doesnot contain adminin activity logs. 
 
+VPC: 
+  No of host projects to which service projects can attach: 1 (limit cant increase) 
+  No of shared vpc host projects in single organization: 100 (limit can increase) 
+  
+Cloud Endpoint (API Gateway): 
+  
 
 
 
